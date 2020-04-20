@@ -73,4 +73,22 @@ arrow_right.addEventListener('click',(e) => {
 
 
 
+var is_open = false;
 
+
+var bar = document.getElementById('bar');
+
+bar.addEventListener('click',(e)=>{
+    const mobile_nav_content = document.querySelector('.mobile_nav_content');
+    if(!is_open){
+        mobile_nav_content.style = "height:50vh;overflow:auto;";
+        is_open = true;
+        bar.classList.remove('fa-bars');
+        bar.classList.add('fa-close');
+    }else{
+        bar.classList.remove('fa-close');
+        bar.classList.add('fa-bars');
+        mobile_nav_content.style = "height:0;overflow:hidden;";
+        is_open = false;
+    }
+})

@@ -269,6 +269,10 @@ footer .container {
 
 }
 
+.mobile_nav{
+    display:none;
+}
+
 
 
 @media only screen and (max-width: 600px) {
@@ -296,5 +300,61 @@ footer .container {
 
 .products-header ul li a {
     font-size: 12px;
+}
+
+.mobile_nav{
+    display: flex;
+    width:40%;
+    justify-content: space-around;
+}
+.mobile_nav li .fa {
+    font-size:28px;
+}
+.nav-list{
+    display: none;
+}
+
+nav .container{
+    flex-direction: row !important;
+    width: 100% !important; 
+    margin:auto;
+    align-items: center;
+    position: fixed;
+    top:0;
+    background:white;
+}
+.brand{
+    width:50%;
+    padding:10px;
+}
+nav{
+    position: relative;
+}
+.mobile_nav_content{
+    width:100%;
+    height:0;
+    overflow: hidden;
+    transition: all 1s ease;
+    position: fixed;
+    top:50px;
+    background:white;
+}
+
+.mobile_nav_content ul{
+    margin:0;
+    padding:10px;
+    
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;
+    margin-top:10px;
+}
+
+
+.list-item{
+    font-size:22px;
+    color:black;
 }
 }
